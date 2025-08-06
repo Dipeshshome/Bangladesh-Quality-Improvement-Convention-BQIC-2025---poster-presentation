@@ -94,14 +94,31 @@
             gap: 0.3in;
         }
         
-        /* Header Section */
+        /* Header Section with Images */
         .header {
-            text-align: center;
             background: linear-gradient(135deg, #2c5aa0, #1e3a8a);
             color: white;
             padding: 0.4in;
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+        
+        .header-logo {
+            width: 3in;
+            height: 3in;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+        
+        .header-content {
+            text-align: center;
+            flex-grow: 1;
+            padding: 0 0.5in;
         }
         
         .title {
@@ -416,13 +433,17 @@
 </head>
 <body>
     <div class="poster-container">
-        <!-- Header -->
+        <!-- Header with Images -->
         <div class="header">
-            <div class="title">Labaid Cancer and Super Speciality Center: Digital health and Innovation</div>
-            <div class="authors">
-                <span class="presenting-author">Prof. (Brig Gen Rtd) Dr. Mohammad Abdul Aleem</span>, Dipesh Shome
+            <img src="logo1.png" alt="Left Logo" class="header-logo">
+            <div class="header-content">
+                <div class="title">Labaid Cancer and Super Speciality Center: Digital health and Innovation</div>
+                <div class="authors">
+                    <span class="presenting-author">Prof. (Brig Gen Rtd) Dr. Mohammad Abdul Aleem</span>, Dipesh Shome
+                </div>
+                <div class="affiliation">Labaid Cancer and Super Speciality Center, Bangladesh</div>
             </div>
-            <div class="affiliation">Labaid Cancer and Super Speciality Center, Bangladesh</div>
+            <img src="logo2.png" alt="Right Logo" class="header-logo">
         </div>
         
         <!-- Main Content -->
@@ -677,11 +698,11 @@
                     <div class="business-metrics">
                         <div class="business-row">
                             <div class="business-metric">
-                                <div class="business-number">৳2.5M</div>
+                                <div class="business-number">৳10L</div>
                                 <div class="business-label">Monthly Revenue</div>
                             </div>
                             <div class="business-metric">
-                                <div class="business-number">150K+</div>
+                                <div class="business-number">50K+</div>
                                 <div class="business-label">Active Users</div>
                             </div>
                         </div>
