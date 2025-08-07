@@ -46,14 +46,14 @@
 }
 
 .business-number {
-    font-size: 24pt;
+    font-size: 16pt;
     font-weight: bold;
     margin-bottom: 0.05in;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 .business-label {
-    font-size: 24pt;
+    font-size: 14pt;
     font-weight: bold;
     opacity: 0.9;
 }
@@ -96,18 +96,7 @@
         
         /* Header Section with Images */
         .header {
-            .header {
             background: rgb(86, 91, 150);
-            color: white;
-            padding: 0.3in;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
-            min-height: 2.5in;
-        }
             color: white;
             padding: 0.3in;
             border-radius: 15px;
@@ -140,7 +129,7 @@
         }
         
         .title {
-            font-size: 72pt;
+            font-size: 58pt;
             font-weight: bold;
             margin-bottom: 0.15in;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
@@ -166,18 +155,23 @@
         
         /* Main Content Grid */
         .main-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0.25in;
-        flex-grow: 1;
-        height: 100%;
-        overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.25in;
+            flex-grow: 1;
         }
         
         .left-column, .right-column {
             display: flex;
             flex-direction: column;
             gap: 0.2in;
+            height: 100%;
+        }
+        
+        .left-column .section:last-child,
+        .right-column .section:last-child {
+            margin-bottom: 0;
+            flex-grow: 1;
         }
         
         /* Section Styling */
@@ -190,7 +184,7 @@
         }
         
         .section h2 {
-            font-size: 48pt;
+            font-size: 40pt;
             color: #1e3a8a;
             margin: 0 0 0.12in 0;
             border-bottom: 3px solid #3b82f6;
@@ -198,7 +192,7 @@
         }
         
         .section p, .section li {
-            font-size: 24pt;
+            font-size: 20pt;
             margin: 0.08in 0;
             text-align: justify;
             line-height: 1.3;
@@ -238,12 +232,12 @@
             align-items: center;
             justify-content: center;
             font-weight: bold;
-            font-size: 24pt;
+            font-size: 20pt;
             margin-right: 0.15in;
         }
         
         .step-text {
-            font-size: 24pt;
+            font-size: 22pt;
             flex-grow: 1;
         }
         
@@ -263,7 +257,7 @@
             padding: 0.15in;
             margin: 0.05in 0;
             border-radius: 8px;
-            font-size: 24pt;
+            font-size: 22pt;
             font-weight: bold;
         }
         
@@ -292,13 +286,13 @@
         }
         
         .metric-label {
-            font-size: 24pt;
+            font-size: 22pt;
             font-weight: bold;
             color: #1e3a8a;
         }
         
         .metric-value {
-            font-size: 24pt;
+            font-size: 28pt;
             font-weight: bold;
             color: #059669;
         }
@@ -341,7 +335,7 @@
         }
         
         .result-label {
-            font-size: 24pt;
+            font-size: 20pt;
             color: #065f46;
         }
         
@@ -361,14 +355,14 @@
         }
         
         .tech-category h3 {
-            font-size: 24pt;
+            font-size: 22pt;
             color: #0369a1;
             margin: 0 0 0.05in 0;
             text-align: center;
         }
         
         .tech-items {
-            font-size: 24pt;
+            font-size: 18pt;
             color: #1e40af;
             text-align: center;
             font-weight: bold;
@@ -395,7 +389,7 @@
             color: white;
             padding: 0.08in 0.12in;
             border-radius: 8px;
-            font-size: 24pt;
+            font-size: 18pt;
             font-weight: bold;
             min-width: 1.5in;
             text-align: center;
@@ -428,7 +422,7 @@
         }
         
         .perf-title {
-            font-size: 24pt;
+            font-size: 20pt;
             font-weight: bold;
             color: #1e3a8a;
             margin-bottom: 0.05in;
@@ -450,7 +444,7 @@
             justify-content: center;
             color: white;
             font-weight: bold;
-            font-size: 24pt;
+            font-size: 18pt;
             transition: width 0.5s ease;
         }
     </style>
